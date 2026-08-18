@@ -9,11 +9,11 @@ datasource db {
 }
 
 model Produto {
-  id         Int     @id @default(autoincrement())
+  id         Int      @id @default(autoincrement())
   nome       String
   descricao  String?
   preco      Float
   quantidade Int
-  status     Boolean @default(true)
-  criadoEm Datetime @default(now())
+  status     Boolean  @default(true)
+  criadoEm   DateTime @default(now())
 }
